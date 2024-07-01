@@ -1,0 +1,75 @@
+#audio-animation-container {
+    width: 320px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    overflow: hidden;
+    margin: 0 auto; /* Center the container horizontally and add bottom margin */
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    /* display: none;  */
+    /* Hide animation video container by default */
+}
+
+#animation-video {
+    width: 100%;
+    height: auto;
+    background-color: transparent; /* Set background to transparent */
+}
+
+#audio-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the audio element */
+    align-items: center; /* Vertically center the audio element */
+}
+
+#audio {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#voice-image {
+    height: 375px; /*Adjust height as needed */
+    max-height: 900px; /* Set maximum height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+
+
+.input-container {
+position: relative;
+}
+
+.form-control {
+border: 1px solid #ccc;
+border-left: 3px solid red;
+padding: 10px 15px;
+width: 100%;
+box-sizing: border-box;
+}
+
+.required-asterisk {
+color: red;
+position: absolute;
+right: 10px;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.form-group {
+margin-bottom: 15px;
+}

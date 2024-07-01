@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TrustTone</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='images.jpeg') }}" rel="icon">
+
+  <!-- <link href="assets/img/TrustTone.jpg" rel="TrustTone-icon"> -->
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <!-- <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+  <link href="{{ url_for('static', filename='assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='assets/css/style.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center sticky-top">
+    <div class="container d-flex align-items-center justify-content-between ">
+
+      <div class="logo">
+        <h1><a href="{{ url_for('index') }}">TrustTone</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Data Collection</a></li>
+          <li><a class="nav-link scrollto" href="#deepfake">Deepfake</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(static/assets/img/slide/uni1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Welcome To Our <span>Audio Data Collection
+                    Journey!</span></h2>
+                <p class="animate__animated animate__fadeInUp">Step into my world of audio exploration and discovery.
+                  This website
+                  serves as a dedicated platform for my ambitious project in sound data collection. Join me as I embark
+                  on a journey
+                  to capture, analyze, and interpret audio data in novel and impactful ways.</p>
+                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(static/assets/img/slide/Admin.PNG);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Unlocking the Potential of Sound</h2>
+                <p class="animate__animated animate__fadeInUp">Here, I invite you to join me on a journey of sonic
+                  exploration. From recording ambient sounds in nature to capturing the nuances of everyday life, I
+                  harness the power of sound to uncover hidden patterns and insights. Together, let's embark on a quest
+                  to unlock the full potential of audio data.</p>
+                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(static/assets/img/slide/uni1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Join Me in Embracing the Soundscape</h2>
+                <p class="animate__animated animate__fadeInUp">Come along as I dive deep into the world of audio
+                  data collection. This website is my canvas for expressing creativity, curiosity, and a love
+                  for all things sound-related. Together, let's embrace the soundscape and discover the endless
+                  possibilities that await within each recording. Welcome to my personal audio adventure!</p>
+                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-double-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-double-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>
+            Myself Sagar Kumar, and I'm currently immersed in an exciting academic
+            project called "TrustTone: DeepFake Voice Detection System." I'm fortunate
+            to have the guidance of Assistant Professor Dr. P. M. Kamble at the Department
+            of Computer Science in Central University Karnataka. Together, we're diving
+            deep into the world of detecting DeepFake voices, aiming to tackle the rising
+            concerns about fake media. We're working hard to create a system that can
+            reliably spot these manipulated voices, making sure people can trust the
+            content they hear. It's a challenging but rewarding journey, and we're hopeful
+            that our work will contribute to making the online world a safer place.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="static/assets/img/sagar.jpg" class="img-fluid" alt="" style="height: 100%;">
+            <figcaption style="text-align: center;">Sagar Kumar</figcaption>
+            <!-- <img src="assets/img/pm_kamble.jpeg" class="img-fluid" alt="" style="height: 50%;">  -->
+          </div>
+          <div class="col-lg-9 pt-4 pt-lg-0 content">
+            <h3>Objective: TrustTone: DeepFake Voice Detection System</h3>
+            <p class="fst-italic">
+              TrustTone, as a deepfake voice detection system, likely aims to address the growing concerns surrounding
+              the
+              misuse of synthetic media. Here are three major objectives it might have:
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Detection Accuracy: Develop highly accurate algorithms to reliably
+                identify
+                deepfake voices while minimizing false positives.</li>
+              <li><i class="bi bi-check-circle"></i> Real-time Detection: Develop the ability to instantly identify
+                deepfake voices,
+                enabling swift response and mitigation in live scenarios like voice calls or streaming, enhancing
+                security against
+                potential threats.li>
+              <li><i class="bi bi-check-circle"></i> User Education and Awareness: Educate users and organizations about
+                the risks
+                of deepfake technology and promote the importance of verifying voice authenticity for enhanced security.
+              </li>
+            </ul>
+            <p>
+              TrustTone aims to bolster security and trust in voice-based interactions by focusing on accurate
+              detection, seamless
+              integration, user education, continuous improvement, real-time capabilities, and resilience against
+              adversarial attacks.
+              These objectives collectively strive to mitigate the risks posed by deepfake technology and foster a safer
+              digital environment.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <!-- <img src="assets/img/sagar.jpg" class="img-fluid" alt="" style="height: 100%;"> -->
+            <img src="static/assets/img/pm_kamble.jpeg" class="img-fluid" alt=""
+              style="height: 100%; padding-top: 30px;">
+            <figcaption style="text-align: center;">Dr. P M Kamble</figcaption>
+          </div>
+          <div class="col-lg-9 pt-4 pt-lg-0 content">
+            <h3>Unleashing the Potential of Your Voice: TrustTone's Journey to Transform Audio Data Collection</h3>
+            <p class="fst-italic">
+              Unleashing the Potential of Your Voice: TrustTone's Journey to Transform Audio Data Collection
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Share your voice to enhance understanding and personalize
+                experiences
+                according to your unique preferences, contributing to my project's success.</li>
+              <li><i class="bi bi-check-circle"></i> By sharing your voice, you contribute to making speech recognition
+                more accurate.</li>
+              <li><i class="bi bi-check-circle"></i> Your voice data fuels advancements in voice authentication
+                technology, ensuring secure
+                access to digital systems.</li>
+            </ul>
+            <p>
+              Your invaluable contribution of voice data not only enhances speech recognition accuracy but also drives
+              advancements in authentication, language processing, and linguistic inclusivity. Together, we're shaping a
+              more connected and personalized future.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Data Collection</h2>
+          <p>Please provide your details to support my university project. Your
+            information will be kept confidential and solely used for academic purposes.
+            Your participation is highly valued and appreciated. Thank you for your
+            cooperation and contribution towards the advancement of my project.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="static/assets\voice image.jpeg" class="img-fluid" id="voice-image">
+          </div>
+
+
+
+
+
+
+          <!-- <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="row text-center ">
+                <h3>Your Details</h3>
+                <div class="col-md-8 row-2 m-4 form-group mx-auto">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name*" required>
+
+                </div>
+                <div class="col-md-8 form-group m-4 mt-3 mt-md-0 mx-auto">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-8 form-group m-4 mt-3 mt-md-0 mx-auto"> -->
+                  <!-- <input type="Department" class="form-control" name="Department" id="Department"
+                    placeholder="Your Department" required> -->
+                  <!-- <input type="text" class="form-control" name="Department" id="Department"
+                    placeholder="Your Department" required>
+                  <span class="required">*</span>
+                </div>
+                <div class="col-md-8 form-group m-4 mt-3 mt-md-0 mx-auto">
+                  <input type="University" class="form-control" name="University" id="University"
+                    placeholder="Your University" required>
+                </div> -->
+
+
+                <div class="col-md-6 mt-4 mt-md-0">
+                  <div class="icon-box">
+                    <div class="row text-center ">
+                      <h3>Your Details</h3>
+                      <div class="col-md-8 row-2 m-4 form-group mx-auto">
+                        <div class="input-container">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                          <span class="required-asterisk">*</span>
+                        </div>
+                      </div>
+                      <div class="col-md-8 form-group m-4 mt-3 mt-md-0 mx-auto">
+                        <div class="input-container">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                          <span class="required-asterisk">*</span>
+                        </div>
+                      </div>
+                      <div class="col-md-8 form-group m-4 mt-3 mt-md-0 mx-auto">
+                        <div class="input-container">
+                          <input type="text" class="form-control" name="Department" id="Department" placeholder="Your Department" required>
+                          <span class="required-asterisk">*</span>
+                        </div>
+                      </div>
+                      <div class="col-md-8 form-group m-4 mt-3 mt-md-0 mx-auto">
+                        <div class="input-container">
+                          <input type="text" class="form-control" name="University" id="University" placeholder="Your University" required>
+                          <span class="required-asterisk">*</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="row-md-6 mt-2">
+        <div class="icon-box">
+          <div class="row text-center ">
+            <div class="col-md-8 row-2 m-4 form-group mx-auto">
+              <h2>Read this paragraph while start recording</h2>
+              <p>
+                Artificial Intelligence (AI) changes industries by acting like human
+                intelligence. It helps in many areas, like suggesting movies or driving
+                cars without people. AI is used in healthcare, finance, and entertainment
+                to make things work better and bring new ideas. It's important to use AI
+                in a good way and think about how it affects people.
+              </p>
+
+              <div id="audio-animation-container">
+                <div id="animation-video-container">
+                  <video id="animation-video">
+                    <source src="{{ url_for('static', filename='animation.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+
+              <div id="audio-container">
+                <audio controls id="audio-element" style="display: none;"></audio>
+              </div>
+              <div id="audio-buttons">
+                <button id="start-recording">Start Recording</button>
+                <button id="stop-recording" disabled>Stop Recording</button>
+                <button id="save-audio">Submit</button> <!-- New Save Audio button -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+    
+    <section id="deepfake">
+      <div class="section-title">
+        <h2>Deepfake Voice Detector</h2>
+        <p>This section provides information about deepfakes.</p>
+        <input type="text" id="audioPath" readonly placeholder="Audio file path will appear here">
+        <br><br>
+        <input type="file" id="audioInput" style="display: none;">
+        <button id="browseBtn">Browse Audio</button>
+        <button id="uploadBtn">Upload Audio</button>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg mt-0">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Central University of Karnataka Aland Road, Kadaganchi, 585367</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>sagarsinghrajput.india@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+91 9576547062</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-12 ">
+            <iframe class="mb-4 mb-lg-0"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30451.22132796228!2d76.667026978947!3d17.44043109667083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scentral%20university%20of%20karnataka%20!5e0!3m2!1sen!2sin!4v1709376335417!5m2!1sen!2sin"
+              frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>TrustTone</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+
+
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="{{ url_for('static', filename='scripts1.js') }}"></script>
+
+
+
+
+</body>
+
+</html>
